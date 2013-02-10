@@ -1,9 +1,10 @@
-puppet
+# The Puppet module:
 
-This module manage and install puppet agent and server.
+## Introduction
 
-Usage
------
+The Puppet Puppet Module manage and install puppet agent and server
+
+## Usage
 
 For agent only
 class { 'puppet': }
@@ -11,24 +12,22 @@ class { 'puppet': }
 For server
 class { 'puppet::server': }
 
-Requires
---------
+## Requires
 
 * puppetlabs/apt
 
 
-License
--------
+## License
+
 The puppet module is provided under the terms of The MIT License.
 
-Author
--------
+## Author
+
 LStuker
 
 Inspired by elasticdog / puppet-sandbox
 
 
-Support
--------
+## Support
 
 Please log tickets and issues at (https://github.com/LStuker/puppet-puppet)
