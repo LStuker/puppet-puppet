@@ -1,0 +1,24 @@
+#
+# THIS FILE IS MANAGED BY PUPPET
+# iw-puppet
+# <%= file %>
+#
+
+[main]
+  logdir     = /var/log/puppet
+  ssldir     = $vardir/ssl
+  rundir     = /var/run/puppet
+  modulepath = '$confdir/modules:/usr/share/puppet/modules:/vagrant/modules'
+  pluginsync = true
+
+[agent]
+  listen      = true
+  report      = true
+  classfile   = $vardir/classes.txt
+  localconfig = $vardir/localconfig
+
+<% if config == "master" -%>
+[master]
+
+
+<% end -%>
